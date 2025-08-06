@@ -1,0 +1,172 @@
+[
+  {
+    "id": "zulfiqarstrikers",
+    "name": "Zulfiqar Strikers",
+    "players": [
+      { "name": "Tanweer Alam", "image": "/images.jpg" },
+      { "name": "Taslim Ansari", "image": "/images.jpg" },
+      { "name": "Hasnain Akram", "image": "/images.jpg" },
+      { "name": "Taslim Razzaque Ansari", "image": "/images.jpg" },
+      { "name": "Saddam Hussain", "image": "/images.jpg" },
+      { "name": "Adil Ansari", "image": "/images.jpg" },
+      { "name": "Sahid Farid", "image": "/images.jpg" },
+      { "name": "Faizan Ansari", "image": "/images.jpg" },
+      { "name": "Meraj Ansari", "image": "/images.jpg" },
+      { "name": "Hassan Ansari", "image": "/images.jpg" },
+      { "name": "Alim Uddin", "image": "/images.jpg" },
+      { "name": "Nawedul Hassan", "image": "/images.jpg" },
+      { "name": "Minhaj Ansari", "image": "/images.jpg" },
+      { "name": "Kaif Ansari", "image": "/images.jpg" },
+      { "name": "Ezaz Ansari", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "badshahxi",
+    "name": "Badshah XI",
+    "players": [
+      { "name": "Fahim Ansari", "image": "/images.jpg" },
+      { "name": "Nasimul Raza", "image": "/images.jpg" },
+      { "name": "Alam Ansari", "image": "/images.jpg" },
+      { "name": "Asif Raza", "image": "/images.jpg" },
+      { "name": "Deepak Kumar", "image": "/images.jpg" },
+      { "name": "Fayum Ansari", "image": "/images.jpg" },
+      { "name": "Happy", "image": "/images.jpg" },
+      { "name": "Hassan Raza", "image": "/images.jpg" },
+      { "name": "Manzar Ali", "image": "/images.jpg" },
+      { "name": "Raees Ansari", "image": "/images.jpg" },
+      { "name": "Riyaj Ansari", "image": "/images.jpg" },
+      { "name": "Shamim Ansari", "image": "/images.jpg" },
+      { "name": "Sohail Ansari", "image": "/images.jpg" },
+      { "name": "Sibtain Raza", "image": "/images.jpg" },
+      { "name": "Tanweer Hasan", "image": "/images.jpg" },
+      { "name": "Tousif Raza", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "maskedihmavericks",
+    "name": "Maskedih Mavericks",
+    "players": [
+      { "name": "Abdul Matin", "image": "/images.jpg" },
+      { "name": "Gulam Ansari", "image": "/images.jpg" },
+      { "name": "Imran Ansari", "image": "/images.jpg" },
+      { "name": "Majid Alam", "image": "/images.jpg" },
+      { "name": "Nishar Ahmad", "image": "/images.jpg" },
+      { "name": "Sabir Ali", "image": "/images.jpg" },
+      { "name": "Sadaqat Hussain", "image": "/images.jpg" },
+      { "name": "Shamim Ansari", "image": "/images.jpg" },
+      { "name": "Sarfaraj Ahmad", "image": "/images.jpg" },
+      { "name": "Sarfuddin Ansari", "image": "/images.jpg" },
+      { "name": "Shahid", "image": "/images.jpg" },
+      { "name": "Sohail Ansari", "image": "/images.jpg" },
+      { "name": "Tanweer Ansari", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "maskedihstrikers",
+    "name": "Maskedih Strikers",
+    "players": [
+      { "name": "Ahmad Raza", "image": "/images.jpg" },
+      { "name": "Akram Ansari", "image": "/images.jpg" },
+      { "name": "Alok Rana", "image": "/images.jpg" },
+      { "name": "Aslam Ansari", "image": "/images.jpg" },
+      { "name": "Azhar Ansari", "image": "/images.jpg" },
+      { "name": "Ghulam Sarwar", "image": "/images.jpg" },
+      { "name": "Hasnen Raza", "image": "/images.jpg" },
+      { "name": "Irshad Alam", "image": "/images.jpg" },
+      { "name": "Md Kaif", "image": "/images.jpg" },
+      { "name": "Raza Akram", "image": "/images.jpg" },
+      { "name": "Nishar Ansari", "image": "/images.jpg" },
+      { "name": "Roushan Ali", "image": "/images.jpg" },
+      { "name": "Rustum Ansari", "image": "/images.jpg" },
+      { "name": "Shahnawaz Ansari", "image": "/images.jpg" },
+      { "name": "Shankar Rana", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "maskedihwarriors",
+    "name": "Maskedih Warriors",
+    "players": [
+      { "name": "Anish Raza", "image": "/images.jpg" },
+      { "name": "Fadaul Hasan", "image": "/images.jpg" },
+      { "name": "Imran Nazir", "image": "/images.jpg" },
+      { "name": "Israfil Ansari", "image": "/images.jpg" },
+      { "name": "Md Anis", "image": "/images.jpg" },
+      { "name": "Md Istiyaq Ansari", "image": "/images.jpg" },
+      { "name": "Md Shahbaz", "image": "/images.jpg" },
+      { "name": "Naushad Alam", "image": "/images.jpg" },
+      { "name": "Parwez Alam", "image": "/images.jpg" },
+      { "name": "Riyaz Warsi", "image": "/images.jpg" },
+      { "name": "Sadaqat Alam", "image": "/images.jpg" },
+      { "name": "Saddam Ansari", "image": "/imagesl.jpg" },
+      { "name": "Sanir Ahmad", "image": "/images.jpg" },
+      { "name": "Seraj", "image": "/images.jpg" },
+      { "name": "Shoaib Akhtar", "image": "/images.jpg" },
+      { "name": "Sohail Ansari", "image": "/images.jpg" },
+      { "name": "Sohail Ansari", "image": "/images.jpg" },
+      { "name": "Wazid Ansari", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "maskedihsuperkings",
+    "name": "Maskedih Super Kings",
+    "players": [
+      { "name": "Shakil Akhtar", "image": "/images.jpg" },
+      { "name": "Masum Ali", "image": "/images.jpg" },
+      { "name": "Ali Juman", "image": "/images.jpg" },
+      { "name": "Masum Raza", "image": "/images.jpg" },
+      { "name": "Jamir Uddin", "image": "/images.jpg" },
+      { "name": "Nafish Ansari", "image": "/images.jpg" },
+      { "name": "Md Raza", "image": "/images.jpg" },
+      { "name": "Niyaj Alam", "image": "/images.jpg" },
+      { "name": "Shahbaj Ansari", "image": "/images.jpg" },
+      { "name": "Shahid Raza", "image": "/images.jpg" },
+      { "name": "Sajid Haider", "image": "/images.jpg" },
+      { "name": "Samsad Alam", "image": "/images.jpg" },
+      { "name": "Sarfaraz Ansari", "image": "/images.jpg" },
+      { "name": "Seraj Ansari", "image": "/images.jpg" },
+      { "name": "Rahul Sharma", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "samuraixi",
+    "name": "Samurai XI",
+    "players": [
+      { "name": "Aamir Sohail", "image": "/images.jpg" },
+      { "name": "Arbaaz Ansari", "image": "/images.jpg" },
+      { "name": "Aslam", "image": "/images.jpg" },
+      { "name": "Arshad Ansari", "image": "/images.jpg" },
+      { "name": "Khwaja Akram", "image": "/images.jpg" },
+      { "name": "Jasim Ansari", "image": "/images.jpg" },
+      { "name": "Md Hedayat", "image": "/images.jpg" },
+      { "name": "Md saif", "image": "/images.jpg" },
+      { "name": "Md Saifulla", "image": "/images.jpg" },
+      { "name": "Miraz", "image": "/images.jpg" },
+      { "name": "Shadab Ansari", "image": "/images.jpg" },
+      { "name": "Sahil Raza", "image": "/images.jpg" },
+      { "name": "Shahnawaz Hussain", "image": "/images.jpg" },
+      { "name": "Zishan Akram", "image": "/images.jpg" },
+      { "name": "Taukir Akam", "image": "/images.jpg" }
+    ]
+  },
+  {
+    "id": "rsiixi",
+    "name": "RSII XI",
+    "players": [
+      { "name": "Azad Ansari", "image": "/images.jpg" },
+      { "name": "Asif Ali", "image": "/images.jpg" },
+      { "name": "Hasibul Ansari", "image": "/images.jpg" },
+      { "name": "Ramiz Raza", "image": "/images.jpg" },
+      { "name": "Sachin Pandya", "image": "/images.jpg" },
+      { "name": "Ashjad Raza", "image": "/images.jpg" },
+      { "name": "Khursid Ansari", "image": "/images.jpg" },
+      { "name": "Muzaffar Ansari", "image": "/images.jpg" },
+      { "name": "Nadim Ahmad", "image": "/images.jpg" },
+      { "name": "Sabir Ansari", "image": "/images.jpg" },
+      { "name": "Sahan Raza", "image": "/images.jpg" },
+      { "name": "Shakil Ansari", "image": "/images.jpg" },
+      { "name": "Salman Ansari", "image": "/images.jpg" },
+      { "name": "Aarif Ansari", "image": "/images.jpg" },
+      { "name": "Ali Hussain", "image": "/images.jpg" }
+    ]
+  }
+]
