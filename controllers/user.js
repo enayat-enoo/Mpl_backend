@@ -66,7 +66,7 @@ async function handleUserLogin(req, res) {
       .cookie("token", token, {
         httpOnly: true,
         secure: true, 
-        sameSite: "lax",
+        sameSite: "none",
         maxAge: 24 * 60 * 60 * 1000,
       }).status(201)
       .json({ login: true ,user : user.name});
