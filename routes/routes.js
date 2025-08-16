@@ -1,21 +1,18 @@
-const express=require('express')
+const express = require("express");
 const router = express.Router();
 const teams = require("../teams.json");
-const player = require("../models/playerModel");
+
+const { handlePlayerRegistration, handleUsersignup, handleUserLogin, handleUserLogOut } = require("../controllers/user");
+const { authHandler } = require("../service/auth");
 
 router.get("/", (req, res) => {
-  res.json(teams);
+  res.status(200).json(teams);
 });
 
-router.post("/",async (req, res) => {
-  const {name,number,mohallaName,role} = req.body;
-  const playerId = await player.create({
-        name,
-        number,
-        mohallaName,
-        role
-  })
-   res.send('Player added successfully');
-});
+router.post("/", handlePlayerRegistration);
+router.post("/signup", handleUsersignup);
+router.post("/login", handleUserLogin);
+router.get("/logout", handleUserLogOut);
+router.get("/auth/check", authHandler);
 
-module.exports = router
+module.exports = router;
