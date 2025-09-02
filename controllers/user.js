@@ -71,7 +71,7 @@ async function handleUserLogin(req, res) {
         secure: true, 
         // secure : false, //To be used in localhost only
         sameSite: "none",
-        // sameSite: "lax",////To be used in localhost only
+        // sameSite: "lax",//To be used in localhost only
         maxAge: 24 * 60 * 60 * 1000,
       }).status(201)
       .json({ login: true ,user : user.name});
