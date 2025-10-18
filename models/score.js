@@ -12,9 +12,15 @@ const scoreSchema = new mongoose.Schema({
     },
     balls : {
         type : Number
+    },
+    matchDetails : {
+      type : mongoose.Schema.Types.ObjectId,
+      ref : "match",
+      required : true,
     }
 })
 
 const scoreModel = mongoose.model("scoreModel",scoreSchema)
+scoreModel.syncIndexes();
 
 module.exports = scoreModel

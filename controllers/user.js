@@ -1,7 +1,10 @@
 const player = require("../models/playerModel");
+const match = require("../models/matchModel");
 const userModel = require("../models/user");
+const scoreModel = require("../models/score")
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const { default: mongoose } = require("mongoose");
 require("dotenv").config();
 
 const saltRounds = parseInt(process.env.SALT_ROUNDS, 10);
@@ -91,9 +94,52 @@ async function handleUserLogOut(req, res) {
     secure: true,
     // secure: false, //To be used in localhost only
     sameSite: "none",
-    // sameSite: "lax" //To be used in localhost only
+    // sameSite: "lax", //To be used in localhost only
   });
   return res.status(200).json({ logout: true });
+}
+
+async function createMatch(req, res) {
+  const userData = req.user;
+  const { team1, team2, date } = req.body;
+  if (!team1 || !team2) {
+    return res.status(401).json({ missingRequiredFields: "true" });
+  }
+  try {
+    const matchData = await match.create({
+      firstTeam: team1,
+      secondTeam: team2,
+      date: date,
+      createdBy : userData.id
+    });
+
+    const scoreDb=await scoreModel.create({
+      runs : 0,
+      wickets : 0,
+      Overs : 0,
+      balls : 0,
+      matchDetails : matchData._id
+    })
+    res.status(200).json({ status: true ,message : "match created",scoreDb : scoreDb._id});
+  } catch (error) {
+    console.log(error)
+    res.status(400).json({ status : false, message: "Some error has occurred" });
+  }
+}
+
+async function getMatchDetailsByUserId(req,res) {
+    const userId = req.user.id;
+    try {
+      const matchData = await match.find({createdBy : userId});
+      return res.status(200).json(matchData)
+    } catch (error) {
+      return res.json({message : "some error has occured"})
+    }
+}
+
+async function getMatchDetails(req,res){
+    const matchData = await match.find({})
+    return res.status(200).json({matchData})
 }
 
 module.exports = {
@@ -101,4 +147,7 @@ module.exports = {
   handleUsersignup,
   handleUserLogin,
   handleUserLogOut,
+  createMatch,
+  getMatchDetails,
+  getMatchDetailsByUserId
 };

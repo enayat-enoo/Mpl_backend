@@ -8,7 +8,6 @@ const router = require("./routes/routes");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
-const scoreModel = require("./models/score");
 
 const server = http.createServer(app);
 
@@ -45,36 +44,10 @@ app.use((err, req, res, next) => {
 
 app.use("/", router);
 
-//Score Update
+//Sockets
+require("./Sockets/scoreScokets")(io);
 
-io.on("connection", async (socket) => {
-  console.log("a user connected", socket.id);
-  const current = await scoreModel.findOne({});
-  if (current) {
-    socket.emit("score", current);
-  }
-  socket.on("score", async (score) => {
-    console.log("score : ", score);
-    let prevScores = await scoreModel.findOne({});
-
-    if (!prevScores) {
-      prevScores = await scoreModel.create({
-        runs: 0,
-        wickets: 0,
-        Overs: 0,
-        balls: 0,
-      });
-    }
-    const totalScore = prevScores.runs + score.runs;
-    const totalWickets = score.wicket ?? prevScores.wickets; // or increment if you want
-    const totalOvers = score.over ?? prevScores.Overs;
-    const totalBalls = score.balls ?? prevScores.balls;
-
-    const updated=await scoreModel.findOneAndUpdate({}, { runs: totalScore, wickets : totalWickets, Overs : totalOvers , balls : totalBalls},{new:true});
-    socket.broadcast.emit("score", updated);
-  });
-});
-
+ 
 server.listen(port, () => {
   console.log(`Server running at port ${port}`);
 });
