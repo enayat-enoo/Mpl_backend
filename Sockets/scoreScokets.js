@@ -5,20 +5,25 @@ module.exports = function (io) {
     socket.on("joinMatch", async ({ matchId }) => {
       socket.join(matchId);
       const currentScore = await scoreModel.findOne({ matchDetails: matchId });
+      const matchDetails = await currentScore.populate("matchDetails");
+      const team1 = matchDetails.matchDetails.firstTeam;
+      const team2 = matchDetails.matchDetails.secondTeam;
       const liveScore = {
         runs: currentScore.runs,
         wickets: currentScore.wickets,
         overs: currentScore.Overs,
         balls: currentScore.balls,
+        team1 : team1,
+        team2 : team2
       };
       socket.emit("liveScore", liveScore);
     });
 
-    socket.on("score", async ({ matchId, data }) => {
+    socket.on("score", async ({ matchId, run }) => {
       let prevScores = await scoreModel.findOne({ matchDetails: matchId });
-      const score = data;
+      const score = run;
       const updateRuns = prevScores.runs + score;
-      if (data.wickets) prevScores.wickets += 1;
+      // if (data.wickets) prevScores.wickets += 1;
       let updateBalls = prevScores.balls + 1;
 
       if (updateBalls === 6) {
